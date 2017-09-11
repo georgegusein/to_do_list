@@ -1,0 +1,25 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "to do list based on MEAN ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgegusein/to_do_list.git"
+  },
+  "author": "George Gusein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgegusein/to_do_list/issues"
+  },
+  "homepage": "https://github.com/georgegusein/to_do_list#readme",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongojs": "^2.4.1"
+  }
+}
