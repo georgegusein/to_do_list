@@ -32,7 +32,7 @@ router.delete('/task/:id',(req,res,next)=>{
         if(err){
             res.send(err);
         }else{
-            console.log("1 document deleted");
+            res.json({"success":"task deleted"});
            // res.json(task);
         }
     });

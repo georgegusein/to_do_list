@@ -1,15 +1,18 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-
+//cross origin
+const cors = require('cors');
 //routes
 let index = require('./routes/index');
 let tasks = require('./routes/tasks');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
+// CORS Middleware cross origin requests
+app.use(cors());
 //View engine
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
